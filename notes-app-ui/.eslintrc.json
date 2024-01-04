@@ -1,0 +1,57 @@
+{
+  "extends": [
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "prettier"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["tailwindcss"],
+  "rules": {
+    "prettier/prettier": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/href-no-hash": ["off"],
+    "jsx-a11y/label-has-associated-control": "off",
+    "react/jsx-filename-extension": [
+      "warn",
+      { "extensions": [".jsx", ".tsx"] }
+    ],
+    "max-len": [
+      "warn",
+      {
+        "code": 80,
+        "tabWidth": 2,
+        "comments": 80,
+        "ignoreComments": false,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/prop-types": "off", // Since we do not use prop-types
+    "react/require-default-props": "off", // Since we do not use prop-types
+    "no-param-reassign": 0,
+    "tailwindcss/no-custom-classname": "off"
+  }
+}
