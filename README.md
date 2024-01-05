@@ -7,3 +7,6 @@ notes CRUD and search
  - prisma as an orm
 
 code is master branch
+
+
+refer [https://www.youtube.com/watch?v=2MoSzSlAuNk]
